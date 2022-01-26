@@ -1,0 +1,61 @@
+{
+  "mod_elements": [
+    {
+      "name": "CannabisLeaf",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_leaf"
+    },
+    {
+      "name": "DriedCannabisLeafFoodEaten",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_food_eaten",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DriedCannabisLeaf",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.weedmod.cannabis_leaf": "Cannabis Leaf",
+      "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "weedmod",
+    "modName": "WeedMod",
+    "version": "1.0.0",
+    "author": "Professional, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.weedmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}
