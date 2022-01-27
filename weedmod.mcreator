@@ -9,31 +9,212 @@
       "registry_name": "cannabis_leaf"
     },
     {
-      "name": "DriedCannabisLeafFoodEaten",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dried_cannabis_leaf_food_eaten",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "DriedCannabisLeaf",
       "type": "food",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dried_cannabis_leaf"
+    },
+    {
+      "name": "CannabisPlant",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant"
+    },
+    {
+      "name": "CannabisPlantUpdateTick",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannabisPlantLootTable",
+      "type": "loottable",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_loot_table"
+    },
+    {
+      "name": "CannabisPlant2",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_2"
+    },
+    {
+      "name": "CannabisPlant3",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_3"
+    },
+    {
+      "name": "CannabisSeedsRightClickOnBlock",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_seeds_right_click_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannabisPlantOnBlockRightClick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_on_block_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicDust",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust"
+    },
+    {
+      "name": "InjectorSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "injector_sword"
+    },
+    {
+      "name": "MagicDustWhenEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DriedCannabisLeafReceipt",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_receipt"
+    },
+    {
+      "name": "DriedCannabisLeafWhenEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannabisSeeds",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_seeds"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.weedmod.cannabis_seeds": "Cannabis Seeds",
+      "block.weedmod.cannabis_plant_2": "Cannabis Plant",
+      "block.weedmod.cannabis_plant_3": "Cannabis Plant",
       "item.weedmod.cannabis_leaf": "Cannabis Leaf",
-      "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf"
+      "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf",
+      "block.weedmod.cannabis_plant": "Cannabis Plant"
     }
   },
   "foldersRoot": {
