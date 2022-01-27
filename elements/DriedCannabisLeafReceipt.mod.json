@@ -1,0 +1,20 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "weedmod",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:CannabisLeaf"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:DriedCannabisLeaf"
+    },
+    "name": "dried_cannabis_leaf_receipt",
+    "namespace": "mod"
+  }
+}

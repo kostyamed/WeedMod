@@ -1,6 +1,23 @@
 package net.mcreator.weedmod.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.state.Property;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.weedmod.block.CannabisPlantBlock;
+import net.mcreator.weedmod.block.CannabisPlant3Block;
+import net.mcreator.weedmod.block.CannabisPlant2Block;
+import net.mcreator.weedmod.WeedmodMod;
+
+import java.util.Map;
 
 public class CannabisPlantOnBlockRightClickProcedure {
 
@@ -30,22 +47,18 @@ public class CannabisPlantOnBlockRightClickProcedure {
 				WeedmodMod.LOGGER.warn("Failed to load dependency entity for procedure CannabisPlantOnBlockRightClick!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == CannabisPlantBlock.block
 				&& ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 						.getItem() == Items.BONE_MEAL) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = CannabisPlant2Block.block.getDefaultState();
-
 				BlockState _bso = world.getBlockState(_bp);
-
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
 					if (_property != null && _bs.get(_property) != null)
@@ -54,9 +67,7 @@ public class CannabisPlantOnBlockRightClickProcedure {
 						} catch (Exception e) {
 						}
 				}
-
 				world.setBlockState(_bp, _bs, 3);
-
 			}
 			if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
 				if (entity instanceof PlayerEntity) {
@@ -75,9 +86,7 @@ public class CannabisPlantOnBlockRightClickProcedure {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = CannabisPlant3Block.block.getDefaultState();
-
 				BlockState _bso = world.getBlockState(_bp);
-
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
 					if (_property != null && _bs.get(_property) != null)
@@ -86,9 +95,7 @@ public class CannabisPlantOnBlockRightClickProcedure {
 						} catch (Exception e) {
 						}
 				}
-
 				world.setBlockState(_bp, _bs, 3);
-
 			}
 			if (!((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).abilities.isCreativeMode : false)) {
 				if (entity instanceof PlayerEntity) {
@@ -102,5 +109,4 @@ public class CannabisPlantOnBlockRightClickProcedure {
 			}
 		}
 	}
-
 }

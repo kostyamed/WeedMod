@@ -17,48 +17,20 @@
       "registry_name": "dried_cannabis_leaf"
     },
     {
-      "name": "CannabisPlant",
-      "type": "block",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cannabis_plant"
-    },
-    {
-      "name": "CannabisPlantUpdateTick",
+      "name": "InjectorSwordEffect",
       "type": "procedure",
-      "sortid": 4,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cannabis_plant_update_tick",
+      "registry_name": "injector_sword_effect",
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
-    },
-    {
-      "name": "CannabisPlantLootTable",
-      "type": "loottable",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cannabis_plant_loot_table"
     },
     {
       "name": "CannabisPlant2",
@@ -141,6 +113,58 @@
       }
     },
     {
+      "name": "CannabisPlant",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant"
+    },
+    {
+      "name": "CannabisPlantUpdateTick",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannabisPlantLootTable",
+      "type": "loottable",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_plant_loot_table"
+    },
+    {
+      "name": "CannabisSeeds",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_seeds"
+    },
+    {
       "name": "MagicDust",
       "type": "food",
       "sortid": 5,
@@ -195,14 +219,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "CannabisSeeds",
-      "type": "item",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cannabis_seeds"
     }
   ],
   "variable_elements": [],
@@ -214,7 +230,9 @@
       "block.weedmod.cannabis_plant_3": "Cannabis Plant",
       "item.weedmod.cannabis_leaf": "Cannabis Leaf",
       "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf",
-      "block.weedmod.cannabis_plant": "Cannabis Plant"
+      "item.weedmod.injector_sword": "Injector Sword",
+      "block.weedmod.cannabis_plant": "Cannabis Plant",
+      "item.weedmod.magic_dust": "Magic Dust"
     }
   },
   "foldersRoot": {

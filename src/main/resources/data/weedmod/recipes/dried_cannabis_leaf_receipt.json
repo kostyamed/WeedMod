@@ -1,0 +1,12 @@
+{
+  "group": "weedmod",
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "weedmod:cannabis_leaf"
+  },
+  "result": {
+    "item": "weedmod:dried_cannabis_leaf"
+  }
+}
