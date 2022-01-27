@@ -1,18 +1,11 @@
 
 package net.mcreator.weedmod.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.weedmod.WeedmodModElements;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @WeedmodModElements.ModElement.Tag
 public class InjectorSwordItem extends WeedmodModElements.ModElement {
+
 	@ObjectHolder("weedmod:injector_sword")
 	public static final Item block = null;
 
@@ -47,6 +40,8 @@ public class InjectorSwordItem extends WeedmodModElements.ModElement {
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
+
 		}.setRegistryName("injector_sword"));
 	}
+
 }

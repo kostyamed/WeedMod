@@ -17,6 +17,38 @@
       "registry_name": "dried_cannabis_leaf"
     },
     {
+      "name": "MagicDust",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust"
+    },
+    {
+      "name": "InjectorSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "injector_sword"
+    },
+    {
+      "name": "MagicDustWhenEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "DriedCannabisLeafReceipt",
       "type": "recipe",
       "sortid": 3,
@@ -41,45 +73,21 @@
       }
     },
     {
-      "name": "MagicDust",
-      "type": "food",
-      "sortid": 5,
+      "name": "CannabisSeeds",
+      "type": "item",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "magic_dust"
-    },
-    {
-      "name": "MagicDustWhenEaten",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_dust_when_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "InjectorSword",
-      "type": "tool",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "injector_sword"
+      "registry_name": "cannabis_seeds"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.weedmod.cannabis_seeds": "Cannabis Seeds",
       "item.weedmod.cannabis_leaf": "Cannabis Leaf",
       "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf",
-      "item.weedmod.injector_sword": "Injector Sword",
       "item.weedmod.magic_dust": "Magic Dust"
     }
   },
