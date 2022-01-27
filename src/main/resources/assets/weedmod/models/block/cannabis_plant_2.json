@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "weedmod:blocks/cannabis_plant_2",
+    "particle": "weedmod:blocks/cannabis_plant_2"
+  }
+}
