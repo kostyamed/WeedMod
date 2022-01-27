@@ -9,17 +9,6 @@
       "registry_name": "cannabis_leaf"
     },
     {
-      "name": "DriedCannabisLeafFoodEaten",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dried_cannabis_leaf_food_eaten",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "DriedCannabisLeaf",
       "type": "food",
       "sortid": 2,
@@ -28,12 +17,12 @@
       "registry_name": "dried_cannabis_leaf"
     },
     {
-      "name": "CannabisSeeds",
-      "type": "item",
-      "sortid": 3,
+      "name": "CannabisPlant",
+      "type": "block",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cannabis_seeds"
+      "registry_name": "cannabis_plant"
     },
     {
       "name": "CannabisPlantUpdateTick",
@@ -64,12 +53,12 @@
       }
     },
     {
-      "name": "CannabisPlant",
-      "type": "block",
-      "sortid": 4,
+      "name": "CannabisPlantLootTable",
+      "type": "loottable",
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cannabis_plant"
+      "registry_name": "cannabis_plant_loot_table"
     },
     {
       "name": "CannabisPlant2",
@@ -152,12 +141,68 @@
       }
     },
     {
-      "name": "CannabisPlantLootTable",
-      "type": "loottable",
-      "sortid": 9,
+      "name": "MagicDust",
+      "type": "food",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cannabis_plant_loot_table"
+      "registry_name": "magic_dust"
+    },
+    {
+      "name": "InjectorSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "injector_sword"
+    },
+    {
+      "name": "MagicDustWhenEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DriedCannabisLeafReceipt",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_receipt"
+    },
+    {
+      "name": "DriedCannabisLeafWhenEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CannabisSeeds",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannabis_seeds"
     }
   ],
   "variable_elements": [],
@@ -190,7 +235,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.weedmod",
     "lockBaseModFiles": false
   },

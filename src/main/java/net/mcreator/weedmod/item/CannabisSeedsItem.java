@@ -1,35 +1,17 @@
 
 package net.mcreator.weedmod.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemUseContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.weedmod.procedures.CannabisSeedsRightClickOnBlockProcedure;
-import net.mcreator.weedmod.WeedmodModElements;
-
-import java.util.stream.Stream;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.AbstractMap;
+import net.minecraft.entity.ai.attributes.Attributes;
 
 @WeedmodModElements.ModElement.Tag
 public class CannabisSeedsItem extends WeedmodModElements.ModElement {
+
 	@ObjectHolder("weedmod:cannabis_seeds")
 	public static final Item block = null;
 
 	public CannabisSeedsItem(WeedmodModElements instance) {
 		super(instance, 3);
+
 	}
 
 	@Override
@@ -38,6 +20,7 @@ public class CannabisSeedsItem extends WeedmodModElements.ModElement {
 	}
 
 	public static class ItemCustom extends Item {
+
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("cannabis_seeds");
@@ -77,5 +60,7 @@ public class CannabisSeedsItem extends WeedmodModElements.ModElement {
 					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
 		}
+
 	}
+
 }

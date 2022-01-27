@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "weedmod:cannabis_seeds",
+          "name": "weedmod:deleted_mod_element",
           "weight": 1,
           "functions": [
             {

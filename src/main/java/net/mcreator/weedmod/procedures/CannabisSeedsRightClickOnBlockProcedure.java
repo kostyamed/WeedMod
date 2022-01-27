@@ -1,17 +1,6 @@
 package net.mcreator.weedmod.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.weedmod.item.CannabisSeedsItem;
-import net.mcreator.weedmod.block.CannabisPlantBlock;
-import net.mcreator.weedmod.WeedmodMod;
-
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class CannabisSeedsRightClickOnBlockProcedure {
 
@@ -41,11 +30,13 @@ public class CannabisSeedsRightClickOnBlockProcedure {
 				WeedmodMod.LOGGER.warn("Failed to load dependency entity for procedure CannabisSeedsRightClickOnBlock!");
 			return;
 		}
+
 		IWorld world = (IWorld) dependencies.get("world");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		Entity entity = (Entity) dependencies.get("entity");
+
 		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND
 				&& world.isAirBlock(new BlockPos((int) x, (int) (y + 1), (int) z))) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), CannabisPlantBlock.block.getDefaultState(), 3);
@@ -58,4 +49,5 @@ public class CannabisSeedsRightClickOnBlockProcedure {
 			}
 		}
 	}
+
 }
