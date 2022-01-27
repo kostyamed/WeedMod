@@ -9,23 +9,68 @@
       "registry_name": "cannabis_leaf"
     },
     {
-      "name": "DriedCannabisLeafFoodEaten",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dried_cannabis_leaf_food_eaten",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "DriedCannabisLeaf",
       "type": "food",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dried_cannabis_leaf"
+    },
+    {
+      "name": "DriedCannabisLeafReceipt",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_receipt"
+    },
+    {
+      "name": "DriedCannabisLeafWhenEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_cannabis_leaf_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagicDust",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust"
+    },
+    {
+      "name": "MagicDustWhenEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_dust_when_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InjectorSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "injector_sword"
     }
   ],
   "variable_elements": [],
@@ -33,7 +78,9 @@
   "language_map": {
     "en_us": {
       "item.weedmod.cannabis_leaf": "Cannabis Leaf",
-      "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf"
+      "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf",
+      "item.weedmod.injector_sword": "Injector Sword",
+      "item.weedmod.magic_dust": "Magic Dust"
     }
   },
   "foldersRoot": {
