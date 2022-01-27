@@ -235,6 +235,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cannabis_powder_receipt"
+    },
+    {
+      "name": "WeedCigarette",
+      "type": "food",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weed_cigarette"
+    },
+    {
+      "name": "WeedCigaretteReceipt",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weed_cigarette_receipt"
+    },
+    {
+      "name": "WeedCigaretteEffect",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weed_cigarette_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -249,7 +297,8 @@
       "item.weedmod.dried_cannabis_leaf": "Dried Cannabis Leaf",
       "item.weedmod.injector_sword": "Injector Sword",
       "block.weedmod.cannabis_plant": "Cannabis Plant",
-      "item.weedmod.magic_dust": "Magic Dust"
+      "item.weedmod.magic_dust": "Magic Dust",
+      "item.weedmod.weed_cigarette": "Weed Cigarette"
     }
   },
   "foldersRoot": {
