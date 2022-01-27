@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "weedmod:dried_cannabis_leaf"
+    }
+  ],
+  "result": {
+    "item": "weedmod:cannabis_powder",
+    "count": 1
+  }
+}
