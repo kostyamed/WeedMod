@@ -1,0 +1,32 @@
+{
+  "group": "weed_cigarette_receipt",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "weedmod:cannabis_powder"
+    },
+    "1": {
+      "item": "weedmod:cannabis_powder"
+    },
+    "2": {
+      "item": "weedmod:cannabis_powder"
+    },
+    "3": {
+      "item": "minecraft:paper"
+    },
+    "4": {
+      "item": "minecraft:paper"
+    },
+    "5": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "weedmod:weed_cigarette",
+    "count": 3
+  }
+}
